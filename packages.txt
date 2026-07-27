@@ -5,3 +5,4 @@ libgtk-3-0
 libgbm-dev
 libnss3-dev
 libxss-dev
+chromium
