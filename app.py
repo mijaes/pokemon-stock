@@ -1,3 +1,19 @@
+import os
+import subprocess
+import streamlit as st
+
+# --- [추가] Streamlit Cloud 전용 브라우저 자동 설치 코드 ---
+import os, subprocess
+
+
+@st.cache_resource
+def install_playwright():
+    subprocess.run(["playwright", "install", "chromium"])
+
+
+install_playwright()
+# ----------------------------------------------------
+
 import time
 import pandas as pd
 import streamlit as st
